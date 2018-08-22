@@ -37,3 +37,17 @@ simular_circuito.exe <NOME DO ARQUIVO>.sp
 Uma lista de circuitos exemplo estão na pasta *testes* junto com suas saídas em formato *.out*.
 
 Para maiores informações se refira as códigos.
+
+## Organização do código (Code's organization)
+
+O programa foi feito em C++ no Windows 10 e compilado no mesmo. Não foi utilizada nenhuma biblioteca além das padrões instaladas com o g++ e dos arquivos extras que estão sendo enviados em conjunto no arquivo. Os arquivos estão assim organizados:
+
+- **leitura_componentes.cpp** : faz a leitura do arquivo em formato SPICE, procurando erros;
+
+- **lista_encadeada.cpp** : contém as informações dos componentes guardados em memória;
+
+- **nao_lineares.cpp** : contém as classes responsáveis por lidar com os componentes não lineares diodo e MOSFET tipo NMOS;
+
+- **resolve_sistema.cpp** : contém toda a classe responsável por montar a matriz MNA, fazer a fatoração LU, a resolução do sistema, o refinamento iterativo e o método de Newton;
+
+- **simular_circuito.cpp** : contém a chamada da função "main" com todos os processos necessários para a solução do circuito.
