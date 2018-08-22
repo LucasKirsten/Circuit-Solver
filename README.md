@@ -26,7 +26,7 @@ R_Rdi_4 c	0	20
 .op
 ```
 
-O programa implementa apenas a opção de resolução *.op*. A escrita é NÃO é afetada por letras maiúsculas e minúsculas.
+O programa implementa apenas a opção de resolução *.op*. A escrita NÃO é afetada por letras maiúsculas e minúsculas.
 
 Para simular os valores do circuito, navegue até a pasta onde se encontra o arquivo **simular_cirucito.exe** e execute o comando:
 
